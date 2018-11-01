@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0abde3;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+}
+
+.navi li:first-child {
+  margin-right: 20px;
+}
+
+.navi li svg {
+  fill: #8395a7;
+}
+
+.content {
+  height: calc(100% - 80px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.item {
+  background-position: center;
+  background-size: cover;
+}
+
+.item:first-child {
+  background-image: url(https://i.pinimg.com/564x/ca/6b/8e/ca6b8ed958065e61d4a591d9167f4f5e.jpg);
+}
+
+.item:nth-child(2) {
+  background-image: url(https://i.pinimg.com/564x/ee/65/e7/ee65e7c8763f2f4c7b1a1470fb48a339.jpg);
+  grid-row: span 2;
+}
+
+.item:nth-child(3) {
+  background-image: url(https://i.pinimg.com/564x/f8/c5/04/f8c50483c108e5c244c04334dbef9f21.jpg);
+}
+
+.item:nth-child(4) {
+  background-image: url(https://i.pinimg.com/564x/f0/c1/13/f0c113902c8ce6ba3acd2f7323a05eeb.jpg);
+}
+
+.item:last-child {
+  background-image: url(https://i.pinimg.com/564x/32/af/25/32af254d401167f74d2391dd73f19f4d.jpg);
+}
